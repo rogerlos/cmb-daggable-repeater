@@ -65,7 +65,7 @@
                     swapped: swapped
                 } } );
 
-                window.dispatchEvent( EVENT );
+                $SORT.closest( '.cmb-repeat-table' ).dispatchEvent( EVENT );
             }
         } );
 
