@@ -43,8 +43,8 @@ jQuery( function ( $ ) {
 } );
 ```
 
-By default, this script is configured with this object, which is used to find children within 
-the jQuery object it is passed:
+By default, this script is configured with the following object, used to find children within 
+the passed jQuery object:
 
 ```
 {
