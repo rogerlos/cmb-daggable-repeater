@@ -20,7 +20,7 @@ function my_admin_scripts() {
     wp_enqueue_script(
         'mytheme_admin',
         'http://example.com/wp-content/themes/mytheme/admin.js',
-        [ 'jQuery', 'cmbdragrepeat' ],
+        [ 'jquery', 'cmbdragrepeat' ],
         '',
         true
     );
