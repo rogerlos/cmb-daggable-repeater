@@ -9,8 +9,8 @@ jQuery plugin which allows CMB2 repeatable fields to be sorted by drag and drop 
 
 ## To Use
 
-Adding your admin script with this script as a dependency, and adding this script with 
-jQuery UI Sortable as a dependency.
+* Enqueue this script, with Jquery UI as dependency
+* Enqueue admin script, with this script as a dependency
 
 ```php
 add_action( 'admin_enqueue_scripts', 'my_admin_scripts' );
