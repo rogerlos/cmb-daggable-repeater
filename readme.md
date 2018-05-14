@@ -38,18 +38,19 @@ function my_admin_scripts() {
 
 ```JavaScript
 jQuery( function ( $ ) {
-    // this is the default way to find all repeaters.
+    // Find all repeating fields on this page
     $( '.cmb-repeat' ).cmbDraggableRepeater();
 } );
 ```
 
-By default, this script will use the following object to find children within the jQuery object it is passed:
+By default, this script is configured with this object, which is used to find children within 
+the jQuery object it is passed:
 
 ```
 {
-    sort: '.cmb-tbody'       // sortable() is invoked on this selector
-    row:  '.cmb-repeat-row'  // row selector for individual items
-    item: '[data-iterator]   // actual input field in the row
+    sort: '.cmb-tbody'        // sortable() is invoked on this selector
+    row:  '.cmb-repeat-row'   // individual items, avoiding cmb 'new' and 'delete' rows
+    item: '[data-iterator]'   // input field within row
 }
 ```
 
@@ -57,7 +58,7 @@ You can pass `cmbDraggableRepeater` either:
 * a single selector string, which will be used instead of `.cmb-tbody` to invoke the sorter
 * an object which will be merged with the default object
 
-If a sort is performed, this script will dispatch a `cmb_drag_sort` event to the `Window` object. By examining 
+When the field is dragged and sorted, a `cmb_drag_sort` event is dispatched to the `Window` object. By examining 
 the `details` property of the event, you can discover:
 
 * `0`: jQuery object passed to this script
