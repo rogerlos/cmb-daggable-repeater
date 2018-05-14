@@ -79,7 +79,7 @@ swapped: [
 ]
 ```
 
-Note that the `swapped` array is created anew on every drag, and that the event is fired after every drag. 
+Note that the `swapped` array is created anew (and the event fired) on every `sortable` sort.
 
 ## Revisions
 
