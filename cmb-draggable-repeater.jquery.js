@@ -5,7 +5,7 @@
  * @external  jQuery.fn
  * @author    Roger Los
  * @link      https://github.com/rogerlos
- * @version   1.0
+ * @version   1.1.1
  */
 ( function ( $ ) {
 
@@ -59,7 +59,7 @@
                     i ++;
                 } );
 
-                EVENT = new CustomEvent( 'cmb_drag_sort', {
+                EVENT = new CustomEvent( 'cmb2_drag_sort', {
                     detail : {
                         0       : THIS,
                         1       : this,

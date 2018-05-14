@@ -58,7 +58,7 @@ You can pass `cmbDraggableRepeater` either:
 * a single selector string, which will be used instead of `.cmb-tbody` to invoke the sorter
 * an object which will be merged with the default object
 
-When the field is dragged and sorted, a `cmb_drag_sort` event is dispatched to the closest ancestor of the `sort` 
+When the field is dragged and sorted, a `cmb2_drag_sort` event is dispatched to the closest ancestor of the `sort` 
 object with the class `cmb-repeat-table`. By examining the `details` property of the event, you can discover:
 
 * `0`: jQuery object passed to this script
@@ -82,6 +82,9 @@ swapped: [
 Note that the `swapped` array is created anew (and the event fired) on every `sortable` sort.
 
 ## Revisions
+
+### 1.1.1
+* Changed event name to `cmb2...` to match CMB2 events.
 
 ### 1.1 
 * Changed the event to be dispatched to `cmb-repeat-table` to match other events on repeatable elements.
